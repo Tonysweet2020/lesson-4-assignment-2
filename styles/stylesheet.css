@@ -66,6 +66,31 @@ mark{
     background-color: inherit;
 }
 
+/*---------------- A11Y Features ----------------------------------------------------*/
+nav a{
+  padding: 0.6rem;
+  margin: 0.6rem;
+}
+
+.hide-skip-link{
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hide-skip-link:focus{
+  left: 0;
+}
+
+.sr-only{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /*----------------------------article and aside layout Styling----------------------*/
 .main-section-content-box {
         margin-left: 300px;
